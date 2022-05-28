@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==" crossorigin="anonymous" />
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/site.webmanifest">
+
+    <!--=============== BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <title> Ayogi Akbar | My Personal web </title>
+</head>
+
+<body>
+  
+  
+
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Welcome To My Web</a>
+
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class='bx bx-home-alt'></i>
+                            <div class="section__subtitle nav__text">Home</div>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class='bx bx-user'></i>
+                            <div class="section__subtitle nav__text">About</div>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#work" class="nav__link">
+                            <i class='bx bx-camera'></i>
+                            <div class="section__subtitle nav__text">Gallery</div>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#testimonial" class="nav__link">
+                            <i class='bx bx-bookmark-heart'></i>
+                            <div class="section__subtitle nav__text">Family</div>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class='bx bx-message-square-dots'></i>
+                            <div class="section__subtitle nav__text">Contact</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <!-- Theme Change Button -->
+            <i class='bx bx-moon change-theme' id="theme-button"></i>
+        </nav>
+    </header>
+    
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+        <!--=============== HOME ===============-->
+        
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__data">
+                  <h4 class="home__name">AYOGI AKBAR</h4>
+
+                  <h4 class="kecil">I am a <span id="who"></span>
+                   <h4 class="home__education">" Saya suka mengerjakan sesuatu yg merusak, dan merusak sesuatu yang berkerja "</h4>
+
+                    <div class="home__buttons">
+                        <a download="" href="/assets/pdf/My_Resume.pdf" class="button button--ghost">
+                            Download CV
+                        </a>
+                        <a href="#about" class="button">About Me</a>
+                    </div>
+                </div>
+                <button class="btn btn-primary" onclick="toggleMusic()" id="btn-playback" data-play="false">
+    <i class="fa fa-play"></i>
+    <span id="btn-text">PLAY</span>
+  </button>
+  <audio id="audio" src="/assets/mp3/giie.mp3" />
+  
+
+                <div class="home__handle">
+                    <img src="/assets/img/me5.png" alt="" class="home__img">
+                </div>
+
+                <div class="home__social">
+                    <a href="https://github.com/gionova" class="home__social-link">
+                        <i class='bx bxl-github' ></i>
+                    </a>
+                    <a href="https://instagram.com/only_babygio" class="home__social-link">
+                        <i class='bx bxl-instagram' ></i>
+                    </a>
+                    <a href="https://wa.me/6289520611748?text=hai%20yogi%20save%20kontak%20saya" class="home__social-link">
+                        <i class='bx bxl-whatsapp' ></i>
+                    </a>
+                    <a href="https://www.facebook.com/ayogi.bboucahnyehjarangsadar" class="home__social-link">
+                        <i class='bx bxl-facebook' ></i>
+                    </a>
+                </div>
+
+                <a href="#about" class="home__scroll">
+                    <i class='bx bx-mouse home__scroll-icon' ></i>
+                    <span class="home__scroll-name">Scroll Down</span>
+                </a>
+            </div>
+        </section>
+
+        <!--=============== ABOUT ===============-->
+        <section class="about section" id="about">
+            <span class="section__subtitle">My Intro</span>
+            <h2 class="section__title">About Me</h2>
+
+            <div class="about__container container grid">
+                <div class="about__wrapper">
+                <div class="about__handle">
+                                        <a href="https://instagram.com/only_babygio"><img src="/assets/img/me3.png" alt="" class="about__img"></a>
+                </div>
+            </div>
+                
+                <div class="about__data">
+                    <div class="about__info">
+
+                        <div class="about__box">
+                            <i class='bx bx-cake about__icon' ></i>
+                            <h3 class="about__title">18 july 1996</h3>
+                            <span class="about__subtitle">Birthday</span>
+                        </div>
+                        <div class="about__box">
+                            <i class='bx bx-happy-heart-eyes about__icon' ></i>
+                            <h3 class="about__title"> <a href="https://instagram.com/echa_exsala">Echa Exsala </a></h3>
+                            <span class="about__subtitle">My wife</span>
+                        </div>
+                        <div class="about__box">
+                            <i class='bx bx-face about__icon' ></i>
+                            <h3 class="about__title">Gionova</h3>
+                            <span class="about__subtitle">My child</span>
+                        </div>
+                    </div>
+
+                    <p class="about__description">
+                        Hallo guys! My name is Ayogi Akbar Afrenggo. Saya berusia 25 tahun dan berdomisili di pekanbaru, riau, indonesia. Saya adalah seorang ayah dari Gionova dan suami dari Echa Exsala. Saat ini saya bekerja di bidang Advertising Art Design dan saya juga sedang belajar menguasai bahasa" programan (hanya hobi).
+Jika ingin mengenal saya lebih dekat, silahkan hubungi sosial media saya dibawah. Terima kasih   </p>
+
+                    <a href="#contact" class="button">Contact Me</a>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== SKILLS ===============-->
+        <section class="skills section" id="skills">
+            <span class="section__subtitle">My Abilities</span>
+            <h2 class="section__title">My Experience</h2>
+
+            <div class="skills__container container grid">
+                <div class="skills__content">
+                    <h3 class="skills__title">Frontend Developer</h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxl-html5'></i>
+
+                                <div>
+                                    <h3 class="skills__name">HTML</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class='bx bxl-css3' ></i>
+
+                                <div>
+                                    <h3 class="skills__name">CSS/Sass</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class='bx bxl-javascript' ></i>
+
+                                <div>
+                                    <h3 class="skills__name">JavaScipt</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxl-bootstrap' ></i>
+
+                                <div>
+                                    <h3 class="skills__name">Bootstrap</h3>
+                                    <span class="skills__level">Basic</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class='bx bx-git-branch' ></i>
+
+                                <div>
+                                    <h3 class="skills__name">Git/Github</h3>
+                                    <span class="skills__level">Basic</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class='bx bxl-react' ></i>
+
+                                <div>
+                                    <h3 class="skills__name">React</h3>
+                                    <span class="skills__level">Beginner</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills__content">
+                    <h3 class="skills__title">Software Developer</h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxl-python' ></i>
+
+                                <div>
+                                    <h3 class="skills__name">Python</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class='bx bxl-java' ></i>
+
+                                <div>
+                                    <h3 class="skills__name">Java</h3>
+                                    <span class="skills__level">Beginner</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class='bx bxl-c-plus-plus' ></i>
+
+                                <div>
+                                    <h3 class="skills__name">C/C++</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxl-android' ></i>
+
+                                <div>
+                                    <h3 class="skills__name">Android Studio</h3>
+                                    <span class="skills__level">Beginner</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class='bx bxl-react' ></i>
+
+                                <div>
+                                    <h3 class="skills__name">React Native</h3>
+                                    <span class="skills__level">Beginner</span>
+                                </div>
+                            </div>
+                            <!-- <div class="skills__data">
+                                <i class='bx bxl-react' ></i>
+
+                                <div>
+                                    <h3 class="skills__name">React</h3>
+                                    <span class="skills__level">Beginner</span>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== SERVICES ===============-->
+        <section class="services section" id="service">
+            <span class="section__subtitle">bidang studi</span>
+            <h2 class="section__title">Education</h2>
+
+            <div class="services__container container grid">
+                <div class="services__card">
+                    <h3 class="services__title">2006/2009<p>Mts Nurul Anwar</p></h3>
+
+                    <span class="services__button">
+                        See More
+                        <i class='bx bx-right-arrow-alt services__icon'></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close' ></i>
+
+                            <h3 class="services__modal-title">Mts Nurul Anwar</h3>
+                           <p class="services__modal-description">
+                                Saya Pernah Belajar Di Mts Nurul Anwar kota bekasi, pada tahun ajaran 2006/2009
+                            </p>                     <a href="https://maps.app.goo.gl/sF9U7642kFXjxpdXA" target="_blank" class="work__button">
+                        Location
+                        <i class='bx bx-right-arrow-alt work__icon' ></i>
+                    </a>
+
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    
+                                  
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="services__card">
+                    <h3 class="services__title">2012/2015<p>Smp Pembangunan</p></h3>
+
+                    <span class="services__button">
+                        See More
+                        <i class='bx bx-right-arrow-alt services__icon'></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close' ></i>
+
+                            <h3 class="services__modal-title">Smp Pembangunan</h3>
+                           <p class="services__modal-description">
+                                Saya Pernah Belajar Di Smp Pembangunan kota jakarta timur, pada tahun ajaran 2012/2015
+                            </p>                     <a href="https://maps.app.goo.gl/Xf8QV8nFYer3rppN6" target="_blank" class="work__button">
+                        Location
+                        <i class='bx bx-right-arrow-alt work__icon' ></i>
+                    </a>
+
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    
+                                  
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="services__card">
+                    <h3 class="services__title">2009/2012<p>Smk Assa'adatul Abadiyah</p></h3>
+
+                    <span class="services__button">
+                        See More
+                        <i class='bx bx-right-arrow-alt services__icon'></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close' ></i>
+
+                            <h3 class="services__modal-title">Smk Assa'adatul Abadiyah</h3>
+                           <p class="services__modal-description">
+                                Saya Pernah Belajar Di Smk Assa'adatul Abadiyah kota jakarta barat, pada tahun ajaran 2009/2012
+                            </p>                     <a href="https://maps.app.goo.gl/5C9m56VP2Et6wVpz9" target="_blank" class="work__button">
+                        Location
+                        <i class='bx bx-right-arrow-alt work__icon' ></i>
+                    </a>
+
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    
+                                  
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </section>
+
+        <!--=============== WORK ===============-->
+        <section class="work section" id="work">
+            <span class="section__subtitle">My Gallery</span>
+            <h2 class="section__title">Album</h2>
+
+            <div class="work__filters">
+                <span class="work__item active-work" data-filter="all">All</span>
+                <span class="work__item" data-filter=".sites">My child</span>
+                <span class="work__item" data-filter=".apps">My wife</span>
+                <span class="work__item" data-filter=".games">Happy</span>
+            </div>
+
+            <div class="work__container container grid">
+                <div class="work__card sites">
+                   <a href="https://ibb.co/ccr0Vrk"><img src="https://i.ibb.co/ccr0Vrk/1651170726382.jpg" alt="anak dan istriku" border="0"></a>
+                   <h3 class="work__title">ketika bareng bunda</h3>
+</div>
+                 <div class="work__card sites">
+                  <a href="https://ibb.co/B6p1zWy"><img src="https://i.ibb.co/B6p1zWy/Remini20220428141144574-1.jpg" alt="Remini20220428141144574-1" border="0"></a>
+                   <h3 class="work__title">This is my style</h3>
+</div>
+                   <div class="work__card sites">
+                   <a href="https://ibb.co/Pm02kSX"><img src="https://i.ibb.co/Pm02kSX/IMG-20220417-WA0025-1.jpg" alt="IMG-20220417-WA0025-1" border="0"></a>
+                   <h3 class="work__title">senyum mu</h3>
+</div>
+                    <div class="work__card sites">
+                   <a href="https://ibb.co/W6Wcvhx"><img src="https://i.ibb.co/W6Wcvhx/IMG-20211025-190324-560-transcpr.jpg" alt="IMG-20211025-190324-560-transcpr" border="0"></a>
+                   <h3 class="work__title">cute with bunda</h3>
+</div>
+                <div class="work__card mix apps">
+                    <a href="https://ibb.co/jgc8dZy"><img src="https://i.ibb.co/jgc8dZy/IMG-20211123-161222-964.jpg" alt="IMG-20211123-161222-964" border="0"></a>
+                    <h3 class="work__title">lopyu baby</h3>
+
+                </div>
+                <div class="work__card mix apps">
+                    <a href="https://ibb.co/Jz7Qghg"><img src="https://i.ibb.co/Jz7Qghg/118352269-2850242858539588-3402005114557477976-n.jpg" alt="118352269-2850242858539588-3402005114557477976-n" border="0"></a><h3 class="work__title">melamun wkwkek</h3>
+
+                </div>
+                <div class="work__card mix apps">
+                    <a href="https://ibb.co/4Rk9rgM"><img src="https://i.ibb.co/4Rk9rgM/118298317-774517210052055-1716032169360913059-n.jpg" alt="118298317-774517210052055-1716032169360913059-n" border="0"></a>
+                    <h3 class="work__title">endorse</h3>
+                </div>
+                <div class="work__card mix games">
+                    <a href="https://ibb.co/3m7DsJH"><img src="https://i.ibb.co/3m7DsJH/1652588846207.jpg" alt="1652588846207" border="0"></a>
+                    <h3 class="work__title">pasar malem</h3>
+                </div>
+                <div class="work__card mix games">
+                <a href="https://ibb.co/NLMQv4H"><img src="https://i.ibb.co/NLMQv4H/271976897-634566234497480-6363502025908101305-n.jpg" alt="271976897-634566234497480-6363502025908101305-n" border="0"></a>
+                    <h3 class="work__title">Hbd gio 1 thn</h3>
+                </div>
+            <div class="work__card mix games">
+                    <a href="https://ibb.co/fQHbcdG"><img src="https://i.ibb.co/fQHbcdG/1651458601199.jpg" alt="1651458601199" border="0"></a>
+                    <h3 class="work__title">Lebaran idul fitri 2022</h3>
+                </div>
+            
+            </div>
+        </section>
+      
+        <!--=============== TESTIMONIALS ===============-->
+        <section class="testimonial section" id="testimonial">
+            <span class="section__subtitle">Mereka yang bersamaku</span>
+            <h2 class="section__title">My Family</h2>
+<!--=============== Profile echa ===============-->
+        
+            <div class="testimonial__container container grid swiper">
+                <div class="swiper-wrapper">
+                    <div class="testimonial__card  swiper-slide">
+                        <div class="testimonial__img-wrapper">
+                        <a href="https://instagram.com/echa_exsala"><img src="https://i.ibb.co/Jz7Qghg/118352269-2850242858539588-3402005114557477976-n.jpg" alt="" class="testimonial__img">
+                        </a></div>
+
+                        <h3 class="testimonial__name">Eka Putri Exsala</h3> 
+                        <span class="testimonial__subtitle">My honey / My Wife</span>
+                        <h2 class="testimonial__quote-open">
+                            <i class='bx bxs-quote-alt-left' ></i>
+                        </h2>
+                        <p class="testimonial__description">
+                            &nbsp; &nbsp; &nbsp; &nbsp; Suatu hari, bila aku tak mampu lagi. siapapun yang bertanggung jawab atas senyum mu, sampaikan rasa terimakasih ku, karna telah menggantikan ku.
+                        </p>
+                        <h2 class="testimonial__quote-close">
+                            <i class='bx bxs-quote-alt-right' ></i>
+                        </h2>
+                        <a href="https://instagram.com/echa_exsala" class="footer__social-link">
+                        <i class='bx bxl-instagram' ></i>
+                    </a>
+                    <a href="https://wa.me/6289520611748?text=hai%20yogi%20save%20kontak%20saya" class="footer__social-link">
+                        <i class='bx bxl-whatsapp' ></i>
+                    </a>
+                                        <a href="https://www.facebook.com/dede.asasd.1" class="footer__social-link">
+                        <i class='bx bxl-facebook' ></i>
+                    </a>
+                    </div>
+                    <!--=============== Profile Gionova ===============-->
+        
+                    <div class="testimonial__card  swiper-slide">
+                        <div class="testimonial__img-wrapper">
+                        <a href="https://instagram.com/only_babygio"><img src="https://i.ibb.co/HtpPyhG/IMG-20211002-170805-681.jpg" alt="" class="testimonial__img">
+                        </a></div>
+
+                        <h3 class="testimonial__name">Gionova Almair Akbar</h3> 
+                        <span class="testimonial__subtitle">My Cute / My Child</span>
+                        <h2 class="testimonial__quote-open">
+                            <i class='bx bxs-quote-alt-left' ></i>
+                        </h2>
+                        <p class="testimonial__description">
+                            &nbsp; &nbsp; &nbsp; &nbsp; Nak, laki laki sejati. tidak dilihat dari wajahnya yang tampan dan bersih,Namun dia dilihat dari kesabarannya dalam menghadapi lika kiku kehidupan.
+                        </p>
+                        <h2 class="testimonial__quote-close">
+                            <i class='bx bxs-quote-alt-right' ></i>
+                        </h2>
+                                                <a href="https://instagram.com/only_babygio" class="footer__social-link">
+                        <i class='bx bxl-instagram' ></i>
+                    </a>
+                    <a href="https://wa.me/6289520611748?text=hai%20yogi%20save%20kontak%20saya" class="footer__social-link">
+                        <i class='bx bxl-whatsapp' ></i>
+                    </a>
+                    </div>
+                    <!--=============== Profile Viola ===============-->
+        
+                    <div class="testimonial__card  swiper-slide">
+                        <div class="testimonial__img-wrapper">
+                        <a href="https://ibb.co/5Kxc2Cf"><img src="https://i.ibb.co/5Kxc2Cf/135350383-403597364306162-6101523278567381193-n.jpg" alt="" class="testimonial__img">
+                        </a></div>
+
+                        <h3 class="testimonial__name">Viola Dwi Jenita</h3> 
+                        <span class="testimonial__subtitle">My Little Sister</span>
+                        <h2 class="testimonial__quote-open">
+                            <i class='bx bxs-quote-alt-left' ></i>
+                        </h2>
+                        <p class="testimonial__description">
+                            &nbsp; &nbsp; &nbsp; &nbsp; Embun Tak Butuh Warna Agar Daun Jatuh Cinta.
+                        </p>
+                        <h2 class="testimonial__quote-close">
+                            <i class='bx bxs-quote-alt-right' ></i>
+                        </h2>
+                                                <a href="https://instagram.com/violadwijenita" class="footer__social-link">
+                        <i class='bx bxl-instagram' ></i>
+                    </a>
+                     <a href="https://www.facebook.com/violaslauceria" class="footer__social-link">
+                        <i class='bx bxl-facebook' ></i>
+                    </a>
+                    <a href="https://vt.tiktok.com/ZSdVt2CNo/" class="footer__social-link">
+                        <i class='bx bxl-tiktok' ></i>
+                    </a>
+                    </div>
+                                        <!--=============== Profile Afif ===============-->
+                    <div class="testimonial__card  swiper-slide">
+                        <div class="testimonial__img-wrapper">
+                        <a href="https://ibb.co/YP0tXSb"><img src=https://i.ibb.co/YP0tXSb/1653682027135.jpg alt="" class="testimonial__img">
+                        </a></div>
+
+                        <h3 class="testimonial__name">Afif Afrenggo</h3> 
+                        <span class="testimonial__subtitle">My Younger Brother</span>
+                        <h2 class="testimonial__quote-open">
+                            <i class='bx bxs-quote-alt-left' ></i>
+                        </h2>
+                        <p class="testimonial__description">
+                            &nbsp; &nbsp; &nbsp; &nbsp; Tantangan adalah hadiah yang memaksa kita untuk mencari pusat gravitasi baru, jangan dilawan !, temukan saja cara baru untuk berdiri kembali.
+                        </p>
+                        <h2 class="testimonial__quote-close">
+                            <i class='bx bxs-quote-alt-right' ></i>
+                        </h2>
+                                                <a href="https://instagram.com/afif_afrenggo" class="footer__social-link">
+                        <i class='bx bxl-instagram' ></i>
+                    </a>
+                    <a href="https://www.facebook.com/afifafrenggo0108" class="footer__social-link">
+                        <i class='bx bxl-facebook' ></i>
+                    </a>
+                    </div>
+                                        <!--=============== Profile Tiara ===============-->
+                            <div class="testimonial__card  swiper-slide">
+                        <div class="testimonial__img-wrapper">
+                        <a href="https://ibb.co/stzsjKn"><img src=https://i.ibb.co/stzsjKn/1653682922121-1.jpg alt="" class="testimonial__img">
+                        </a></div>
+
+                        <h3 class="testimonial__name">Tiara Putri Jenita</h3> 
+                        <span class="testimonial__subtitle">My Little Sister</span>
+                        <h2 class="testimonial__quote-open">
+                            <i class='bx bxs-quote-alt-left' ></i>
+                        </h2>
+                        <p class="testimonial__description">
+                            &nbsp; &nbsp; &nbsp; &nbsp; Rebahan tidak akan membuatmu kaya, tapi kaya bisa membuatmu rebahan.
+                        </p>
+                        <h2 class="testimonial__quote-close">
+                            <i class='bx bxs-quote-alt-right' ></i>
+                        </h2>
+                                                <a href="https://instagram.com/araaajala" class="footer__social-link">
+                        <i class='bx bxl-instagram' ></i>
+                    </a>
+                    <a href="https://www.facebook.com/tiara.putri.jenita" class="footer__social-link">
+                        <i class='bx bxl-facebook' ></i>
+                    </a>
+                                        <a href="https://vt.tiktok.com/ZSdVtjP2G/" class="footer__social-link">
+                        <i class='bx bxl-tiktok' ></i>
+                    </a>
+                    </div>
+                                
+                                                            <!--=============== Profile Papa ===============-->
+                                               <div class="testimonial__card  swiper-slide">
+                        <div class="testimonial__img-wrapper">
+                        <a href="https://ibb.co/q5SkWJk"><img src=https://i.ibb.co/q5SkWJk/1653684749708.jpg alt="" class="testimonial__img">
+                        </a></div>
+
+                        <h3 class="testimonial__name">Ferry Renggo/Pak Jack</h3> 
+                        <span class="testimonial__subtitle">My Father / My Hero</span>
+                        <h2 class="testimonial__quote-open">
+                            <i class='bx bxs-quote-alt-left' ></i>
+                        </h2>
+                        <p class="testimonial__description">
+                            &nbsp; &nbsp; &nbsp; &nbsp; Terkadang kita harus berpura pura bodoh untuk membodohi orang bodoh yang berfikir mereka membodohi anda.
+                        </p>
+                        <h2 class="testimonial__quote-close">
+                            <i class='bx bxs-quote-alt-right' ></i>
+                        </h2>
+                    <a href="https://www.facebook.com/jenggo.jeng" class="footer__social-link">
+                        <i class='bx bxl-facebook' ></i>
+                    </a>
+                    </div>
+                                         
+                                                                                <!--=============== Profile Mama ===============-->
+                    <div class="testimonial__card  swiper-slide">
+                        <div class="testimonial__img-wrapper">
+                        <a href="https://ibb.co/tM8PrbN"><img src=https://i.ibb.co/tM8PrbN/1653686336967.jpg alt="" class="testimonial__img">
+                        </a></div>
+
+                        <h3 class="testimonial__name">Helmita</h3> 
+                        <span class="testimonial__subtitle">My Mother / My Wonder Woman</span>
+                        <h2 class="testimonial__quote-open">
+                            <i class='bx bxs-quote-alt-left' ></i>
+                        </h2>
+                        <p class="testimonial__description">
+                            &nbsp; &nbsp; &nbsp; &nbsp; Jika kamu ingin pelangi, kamu harus siap dengan hujan.
+                        </p>
+                        <h2 class="testimonial__quote-close">
+                            <i class='bx bxs-quote-alt-right' ></i>
+                        </h2>
+                    <a href="https://www.facebook.com/helmita.jex" class="footer__social-link">
+                        <i class='bx bxl-facebook' ></i>
+                    </a>
+                    </div>
+                                         
+                                               
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!--=============== CONTACT ===============-->
+        <section class="contact section" id="contact">
+            <span class="section__subtitle">Get in Touch</span>
+            <h2 class="section__title">Contact Me</h2>
+
+            <div class="contact__container container grid">
+                <div class="contact__content">
+                    <h3 class="contact__title">Talk to me</h3>
+
+                    <div class="contact__info">
+                        <div class="contact__card">
+                            <i class='bx bx-mail-send contact__card-icon' ></i>
+                            <h3 class="contact__card-title">Email</h3>
+                            <span class="contact__card-data">ayogiakbar96@gmail.com</span>
+
+                            <a href="mailto:ayogiakbar96@gmail.com" target="_blank" class="contact__button">
+                                Write To Me
+                                <i class='bx bx-right-arrow-alt contact__button-icon' ></i>
+                            </a>
+                        </div>
+                        <div class="contact__card">
+                            <i class='bx bxl-whatsapp contact__card-icon' ></i>
+                            <h3 class="contact__card-title">Whatsapp</h3>
+                            <span class="contact__card-data">+62 895 261 1748</span>
+
+                            <a href="https://api.whatsapp.com/send/?phone=+628952611748&text=Hello%20,%20nice%20to%20meet%20you!" target="_blank" class="contact__button">Write To Me<i class='bx bx-right-arrow-alt contact__button-icon' ></i>
+                            </a>
+                        </div>
+                        <div class="contact__card">
+                            <i class='bx bxl-instagram contact__card-icon' ></i>
+                            <h3 class="contact__card-title">Instagram</h3>
+                            <span class="contact__card-data">@only_babygio</span>
+
+                            <a href="https://Instagram.com/only_babygio" target="_blank" class="contact__button">
+                                Write To Me
+                                <i class='bx bx-right-arrow-alt contact__button-icon' ></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact__content">
+                    <h3 class="contact__title">Suggest a project</h3>
+
+                    <form action="" class="contact__form" name="contact" method="POST" data-netlify="true">
+                        <div class="contact__form-div">
+                            <label for="" class="contact__form-tag">Name</label>
+                            <input type="text" placeholder="Example: Ayogi Akbar Afrenggo" class="contact__form-input">
+                        </div>
+                        <div class="contact__form-div">
+                            <label for="" class="contact__form-tag">Email</label>
+                            <input type="email" placeholder="yourname@example.com" class="contact__form-input">
+                        </div>
+                        <div class="contact__form-div contact__form-area">
+                            <label for="" class="contact__form-tag">Project</label>
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Write your message" class="contact__form-input "></textarea>
+                        </div>
+
+                        <button class="button" type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    
+    <footer class="footer">
+        <div class="footer__container container">
+            <h1 class="footer__title">Ayogi Akbar</h1>
+
+            <ul class="footer__list">
+                <li>
+                    <a href="#about" class="footer__link">About</a>
+                </li>
+                <li>
+                    <a href="#skills" class="footer__link">Skill</a>
+                </li>
+                <li>
+                    <a href="#service" class="footer__link">Education</a>
+                </li>
+            </ul>
+
+            <ul class="footer__social">
+                <a href="https://github.com/gionova" target="_blank" class="footer__social-link">
+                    <i class='bx bxl-github' ></i>
+                </a>
+                <a href="https://wa.me/629520611748?text=Hai%20yogi%20ganteng" target="_blank" class="footer__social-link">
+                    <i class='bx bxl-whatsapp' ></i>
+                </a>
+                <a href="https://instagram.com/only_babygio" target="_blank" class="footer__social-link">
+                    <i class='bx bxl-instagram' ></i>
+                </a>
+            </ul>
+
+            <span class="footer__copy">
+                &copy; Ayogi Akbar. All Rights reserved.
+            </span>
+        </div>
+    </footer>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="/assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="/assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MIXITUP FILTER ===============-->
+    <script src="/assets/js/mixitup.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="/assets/js/main.js"></script>
+        <script src="/assets/js/typed.min.js"></script>
+            <script type="text/javascript" charset="utf-8">
+
+      var typed3 = new Typed('#who', {
+
+        strings: ['developer', 'designer', 'gamers', "echa's husband", "gio's father"],
+
+        typeSpeed: 70,
+
+        backSpeed: 70,
+
+        smartBackspace: true,
+
+        loop: true
+
+      });
+
+    function setHalfVolume() {
+        var myAudio = document.getElementById("audio");
+        myAudio.volume = 30;
+    }
+    const myAudio = document.getElementById("audio");
+    const btn = document.getElementById("btn-playback");
+    const btnIcon = document.querySelector("#btn-playback > i");
+    const btnText = document.getElementById("btn-text");
+    
+    const toggleMusic = () => {      
+      const dataPlay = btn.getAttribute('data-play');
+            
+      if(dataPlay === 'false') {
+        btn.setAttribute('data-play', 'true');
+        myAudio.play();
+        btnIcon.classList.remove("fa-play");
+        btnIcon.classList.add("fa-pause");
+        btnText.innerText = "PAUSE";
+      } else {
+        btn.setAttribute('data-play', 'false');
+        myAudio.pause();
+        btnIcon.classList.remove("fa-pause");
+        btnIcon.classList.add("fa-play");
+        btnText.innerText = "PLAY";
+      }
+    };
+    
+    myAudio.onpause = () => {
+      btn.setAttribute('data-play', 'false');
+        myAudio.pause();
+        btnIcon.classList.remove("fa-pause");
+        btnIcon.classList.add("fa-play");
+        btnText.innerText = "PLAY";
+    };
+
+</script>
+
+</body>
+
+</html>
